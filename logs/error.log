@@ -1,0 +1,29 @@
+2025-12-30T06:17:21.171Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:17:21.172Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs73be20015bwm6ht8bhn3t","err":{}}
+2025-12-30T06:17:56.609Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:17:56.609Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs73be20015bwm6ht8bhn3t","err":{}}
+2025-12-30T06:18:21.193Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:18:21.194Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs73be20015bwm6ht8bhn3t","err":{}}
+2025-12-30T06:19:44.304Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:19:44.305Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs73be20015bwm6ht8bhn3t","err":{}}
+2025-12-30T06:21:29.342Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:21:29.343Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs78mss0000h4m6suih6aeu","err":{}}
+2025-12-30T06:22:16.742Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:22:16.743Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs73be20015bwm6ht8bhn3t","err":{}}
+2025-12-30T06:22:53.249Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:22:53.249Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs7aflw0000v8m6m847xufr","err":{}}
+2025-12-30T06:23:54.353Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:23:54.353Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs7br150003v8m6cem9botj","err":{}}
+2025-12-30T06:25:20.888Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:25:20.893Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs7br150003v8m6cem9botj","err":{}}
+2025-12-30T06:27:26.704Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:27:26.705Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs7br150003v8m6cem9botj","err":{}}
+2025-12-30T06:28:07.821Z [[31merror[39m] LLM provider failure {"service":"spur-backend","err":{"cause":{}}}
+2025-12-30T06:28:07.822Z [[31merror[39m] LLM generation failed {"service":"spur-backend","conversationId":"cmjs7br150003v8m6cem9botj","err":{}}
+2025-12-30T07:01:30.935Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1001","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"base"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
+2025-12-30T07:02:56.962Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1001","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"base"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
+2025-12-30T07:06:49.742Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1001","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"base"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
+2025-12-30T08:25:22.676Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1001","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"dpg-d59nmm3uibrs73bdgou0-a"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
+2025-12-30T08:27:33.787Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1001","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"dpg-d59nmm3uibrs73bdgou0-a"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
+2025-12-30T08:29:35.848Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1001","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"DatabaseNotReachable","host":"dpg-d59nmm3uibrs73bdgou0-a"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
+2025-12-30T08:32:35.272Z [[31merror[39m] Unhandled chat route error {"service":"spur-backend","err":{"code":"P1017","meta":{"modelName":"Conversation","driverAdapterError":{"name":"DriverAdapterError","cause":{"kind":"ConnectionClosed"}}},"clientVersion":"7.2.0","name":"PrismaClientKnownRequestError"}}
