@@ -16,7 +16,7 @@ Server-side portion of the Spur take-home. Provides chat persistence, LLM proxyi
 
 - Prisma manages the schema defined in prisma/schema.prisma.
 - `npx prisma migrate deploy` applies committed migrations to the database specified by DATABASE_URL.
-- A seeding script is not yet implemented; insert test data manually via Prisma Studio (`npx prisma studio`) or SQL if needed.
+- A seeding script is not yet implemented;
 
 ## Environment Variables
 
@@ -29,8 +29,6 @@ Server-side portion of the Spur take-home. Provides chat persistence, LLM proxyi
 | LOG_LEVEL                      | Winston log level                                 | info                                        |
 | LOG_DIR                        | Directory for persisted logs                      | logs                                        |
 | CORS_ORIGINS                   | Comma-separated allowlist for CORS                | http://localhost:3000,http://localhost:4000 |
-| DEFAULT_WEB_ORIGIN             | Web origin fallback when CORS_ORIGINS unset       | http://localhost:3000                       |
-| DEFAULT_ADMIN_ORIGIN           | Secondary origin fallback when CORS_ORIGINS unset | http://localhost:4000                       |
 | APP_VERSION                    | Optional tag surfaced by the health endpoint      | unset                                       |
 | OPENAI_MAX_REQUESTS_PER_MINUTE | In-memory throttle for outbound LLM calls         | 60 (set 0/blank to disable)                 |
 
@@ -55,7 +53,6 @@ Server-side portion of the Spur take-home. Provides chat persistence, LLM proxyi
 
 - Trade-offs: Only per-process rate limiting today; shared distributed throttling and queuing are deferred.
 - Trade-offs: Message history replay is naive (full replay each call), which may increase latency for long sessions.
-- Trade-offs: Chose to defer automated tests; manual verification happens via HTTP clients.
 - If more time: Add integration tests with a mocked LLM and disposable Postgres schema.
 - If more time: Implement seeding and scripted fixtures for local development.
 - If more time: Add summarization or pagination for long conversation history and introduce request throttling around the LLM.

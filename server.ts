@@ -4,7 +4,7 @@ import cors from 'cors';
 import type { NextFunction, Request, Response } from 'express';
 import chatRouter from './routes/chat.routes';
 import { logger } from './utils/logger';
-import { ConversationNotFoundError } from './utils/error';
+import { globalErrorHandler } from './utils/errorHandler';
 
 dotenv.config();
 
@@ -56,27 +56,8 @@ app.get('/health', (_req: Request, res: Response) => {
 
 app.use('/chat', chatRouter);
 
-// global erorr handler
-app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
-  if (err instanceof Error) {
-    logger.error('Unhandled error', {
-      name: err.name,
-      message: err.message,
-      stack: err.stack,
-    });
-  } else {
-    logger.error('Unhandled error', {
-      details: err,
-    });
-  }
-
-  if (err instanceof ConversationNotFoundError) {
-    res.status(404).json({ error: err.message });
-    return;
-  }
-
-  res.status(500).json({ error: 'Internal server error' });
-});
+// global error handler
+app.use(globalErrorHandler);
 
 app.listen(port, () => {
   logger.info('Server listening', { port, environment: process.env.NODE_ENV ?? 'development' });
